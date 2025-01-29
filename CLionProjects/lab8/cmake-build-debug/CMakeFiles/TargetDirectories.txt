@@ -1,3 +1,0 @@
-/home/patromi/CLionProjects/lab8/cmake-build-debug/CMakeFiles/lab8.dir
-/home/patromi/CLionProjects/lab8/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/patromi/CLionProjects/lab8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
