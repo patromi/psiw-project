@@ -1,0 +1,3 @@
+/home/patromi/CLionProjects/projekt/cmake-build-debug/CMakeFiles/projekt.dir
+/home/patromi/CLionProjects/projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/patromi/CLionProjects/projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
