@@ -21,12 +21,22 @@ int main(int argc, const char *argv[]) {
         printf("Usage: %s <klucz> <liczba_zamówień> <max_A_per_zam> <max_B_per_zam> <max_C_per_zam>\n", argv[0]);
         return 1;
     }
+    if (atoi(argv[1]) < 1) {
+        printf("Klucz musi być liczbą dodatnią\n");
+        return 1;
+    }
+
 
     key_t klucz = atoi(argv[1]);
     int liczba_zamowien = atoi(argv[2]);
     int max_A_per_zam = atoi(argv[3]);
     int max_B_per_zam = atoi(argv[4]);
     int max_C_per_zam = atoi(argv[5]);
+    if (liczba_zamowien < 1 || max_A_per_zam < 1 || max_B_per_zam < 1 || max_C_per_zam < 1) {
+        printf("Liczba zamówień oraz ilość produktów w zamówieniu musi być większa od 0\n");
+        return 1;
+    }
+
 
     int kolejka = msgget(klucz, 0666 | IPC_CREAT);
     if (kolejka == -1) {
